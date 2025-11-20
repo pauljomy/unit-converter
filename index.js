@@ -11,8 +11,8 @@ const userInput = document.getElementById("user-input");
 const convertBtn = document.getElementById("convert");
 
 convertBtn.addEventListener("click", () => {
+  console.log("Button clicked! Input value:", userInput.value);
   const [meter, feet] = convertMeterFeet(userInput);
-  // console.log(meter.toFixed(3), feet.toFixed(3));
   const [liters, gallon] = convertLitersGallon(userInput);
   const [kg, pounds] = convertKgPounds(userInput);
 
