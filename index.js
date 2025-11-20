@@ -16,9 +16,9 @@ convertBtn.addEventListener("click", () => {
   const [liters, gallon] = convertLitersGallon(userInput);
   const [kg, pounds] = convertKgPounds(userInput);
 
-  length.textContent = `${userInput.value} meters = ${meter} feet | ${userInput.value} feet = ${feet} meters`;
-  volume.textContent = `${userInput.value} liters = ${liters} gallons | ${userInput.value} gallons = ${gallon} liters`;
-  mass.textContent = `${userInput.value} kilos = ${kg} pounds | ${userInput.value} pounds = ${pounds} kilos`;
+  length.innerHTML = `${userInput.value} meters = ${meter} feet | ${userInput.value} feet = ${feet} meters`;
+  volume.innerHTML = `${userInput.value} liters = ${liters} gallons | ${userInput.value} gallons = ${gallon} liters`;
+  mass.innerHTML = `${userInput.value} kilos = ${kg} pounds | ${userInput.value} pounds = ${pounds} kilos`;
 });
 
 function convertMeterFeet(input) {
