@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+input,
+button {
+  font-family: inherit;
+}
+
 body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
@@ -36,4 +41,59 @@ body {
 
 .container h1 {
   font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.container .user-input {
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  width: 117px;
+  height: 83px;
+  font-size: 58px;
+  background-color: #6943ff;
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.container button {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+.section-container {
+  text-align: center;
+  height: 444px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  justify-content: center;
+  background-color: #f4f4f4;
+  align-items: center;
+}
+
+.inner-grid {
+  width: 500px;
+  height: 108px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #5a537b;
+  margin-bottom: 9px;
+}
+
+.length,
+.volume,
+.mass {
+  color: #353535;
+  font-weight: 400;
 }
